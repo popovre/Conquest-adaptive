@@ -1,4 +1,9 @@
-// Начните писать стили здесь
-body {
-  background-color: tomato;
-}
+//global
+@import "fonts";
+@import "reboot";
+
+//mixins
+@import "mixins";
+
+//variables
+@import "variables";
