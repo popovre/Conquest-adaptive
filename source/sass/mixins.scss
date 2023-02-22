@@ -68,3 +68,23 @@ $mobile-width: 320px;
 }
 
 // custom
+
+@mixin content {
+  width: 100%;
+  margin: 0 auto;
+  // max-width: var(--mobile-width);
+  // padding-left: var(--mobile-padding);
+  // padding-right: var(--mobile-padding);
+
+  @include tablet-w () {
+    // max-width: var(--tablet-width);
+    // padding-left: var(--tablet-padding);
+    // padding-right: var(--tablet-padding);
+  }
+
+  @include desktop-w () {
+    max-width: var(--desktop-width);
+    // padding-left: var(--desktop-padding);
+    // padding-right: var(--desktop-padding);
+  }
+}
