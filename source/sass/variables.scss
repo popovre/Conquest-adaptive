@@ -1,10 +1,12 @@
 :root {
-  //colors
-  --main-font: "Oswald", "Arial", "sans-serif";
+  // default //
   --default-black: #000000;
   --default-white: #ffffff;
   --arial: "Arial", "sans-serif", "Verdana";
   --tablet-width: 768px;
   --desktop-width: 1440px;
   --mobile-width: 320px;
+
+  // custom
+  --main-font: "Roboto", "Arial", "sans-serif";
 }
