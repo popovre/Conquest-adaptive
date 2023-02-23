@@ -5,10 +5,23 @@
 
 .main-header__wrapper {
   @include content;
-  padding-top: 34px;
+  padding-top: 20px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
+
+  @include tablet-w () {
+    padding-top: 34px;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    min-height: 85px;
+  }
+
+  @include desktop-w () {
+
+  }
 }
 
 .main-header__logo-link {
@@ -18,12 +31,20 @@
   letter-spacing: 0.14em;
 
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-end;
   width: 107px;
   min-height: 26px;
 
   margin-bottom: 10px;
 
+  @include tablet-w () {
+    margin-top: 1px;
+  }
+
+  @include desktop-w () {
+    margin-right: 266px;
+  }
 }
 
 .main-header__logo-wrapper {
@@ -40,18 +61,41 @@
 
 .main-header__nav {
   width: 100%;
+
+  @include tablet-w () {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  @include desktop-w () {
+    width: auto;
+    margin: 0;
+    margin-right: auto;
+  }
 }
 
 .main-header__nav-list {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
+
+  @include tablet-w () {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 
 .main-header__nav-item {
+  @include desktop-w () {
+    &:not(:last-child) {
+      margin-right: 65px;
+    }
+  }
 }
 
 .main-header__nav-link {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   padding: 5px 0;
 
@@ -76,26 +120,53 @@
     bottom: 0;
     left: 0;
   }
+
+  @include tablet-w () {
+    &::before,&::after {
+      content: none;
+    }
+
+    padding: 0;
+  }
 }
 
 .main-header__utils {
   width: 100%;
+
+  @include tablet-w () {
+    width: auto;
+  }
 }
 
 .main-header__utils-list {
   display: flex;
+  flex-wrap: nowrap;
   justify-content: space-around;
+
+  @include tablet-w () {
+    justify-content: space-between;
+    min-width: 99px;
+  }
 }
 
 .main-header__utils-item {
   width: 100%;
+
+  @include tablet-w () {
+    width: 25%;
+  }
 }
 
 .main-header__utils-link {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   width: 100%;
   padding: 10px 0;
+
+  @include tablet-w () {
+    padding: 0;
+  }
 }
 
 .main-header__utils-link-icon {
@@ -109,6 +180,7 @@
 .main-header__utils-round {
   position: absolute;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   width: 13px;
