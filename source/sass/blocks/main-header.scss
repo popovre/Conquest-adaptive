@@ -5,6 +5,8 @@
 
 .main-header__wrapper {
   @include content;
+  padding-left: 0;
+  padding-right: 0;
   padding-top: 20px;
   display: flex;
   flex-wrap: wrap;
