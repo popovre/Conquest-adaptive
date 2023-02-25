@@ -40,10 +40,12 @@
   flex-wrap: wrap;
   align-items: center;
   padding-top: 34px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @include tablet-w () {
+    padding: 0;
     margin-top: 200px;
-    padding-top: 0;
   }
 
   @include desktop-w () {
@@ -136,22 +138,7 @@
 }
 
 .preview__link {
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.05em;
-  padding: 14px 18px;
-  width: 100%;
-  text-align: center;
   background-color: var(--black2);
-  color: var(--default-white);
-  margin-top: auto;
-
-  @include tablet-w () {
-    margin-top: 0;
-    width: fit-content;
-    padding: 26px 38px;
-  }
 }
 
 .preview__card {
