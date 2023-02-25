@@ -181,34 +181,34 @@
               Следите за нашими новостями
             </h2>
             <p class="news__call">
-              Подписывайтесь на @conquest_watch в соцсетях и узнавайте о новинках и акциях первыми.
+              Подписывайтесь на <b>@conquest_watch</b> в соцсетях и узнавайте о новинках и акциях первыми.
             </p>
             <ul class="news__socials socials">
               <li class="socials__item socials__item--instagram">
-                <a class="socials__link" href="#">
+                <a class="news__socials-link socials__link" href="#">
                   <span class="visually-hidden">ссылка на instagram аккаунт</span>
-                  <div class="socials__icon-wrapper">
-                    <svg class="socials__instagram-svg" width="23" height="24">
+                  <div class="news__socials-icon socials__icon-wrapper">
+                    <svg class="socials__instagram-svg" width="23" height="23">
                       <use xlink:href="img/icons/sprite.svg#news-instagram-icon"></use>
                     </svg>
                   </div>
                 </a>
               </li>
               <li class="socials__item socials__item--facebook">
-                <a class="socials__link" href="#">
+                <a class="news__socials-link socials__link" href="#">
                   <span class="visually-hidden">ссылка на facebook аккаунт</span>
-                  <div class="socials__icon-wrapper">
-                    <svg class="socials__facebook-svg" width="12" height="22">
+                  <div class="news__socials-icon socials__icon-wrapper">
+                    <svg class="socials__facebook-svg" width="12" height="21">
                       <use xlink:href="img/icons/sprite.svg#news-facebook-icon"></use>
                     </svg>
                   </div>
                 </a>
               </li>
               <li class="socials__item socials__item--twitter">
-                <a class="socials__link" href="#">
+                <a class="news__socials-link socials__link" href="#">
                   <span class="visually-hidden">ссылка на twitter аккаунт</span>
-                  <div class="socials__icon-wrapper">
-                    <svg class="socials__twitter-svg" width="16" height="16">
+                  <div class="news__socials-icon socials__icon-wrapper">
+                    <svg class="socials__twitter-svg" width="22" height="17">
                       <use xlink:href="img/icons/sprite.svg#news-twitter-icon"></use>
                     </svg>
                   </div>
@@ -216,15 +216,21 @@
               </li>
             </ul>
           </div>
-          <div class="news__images">
-            <ul class="news__images-list">
-              <li class="news__images-item--small">
-                <div class="news__images-wrapper"></div>
-                <div class="news__images-wrapper"></div>
-              </li>
-              <li class="news__images-item--big"></li>
-            </ul>
-          </div>
+          <ul class="news__images-list">
+            <li class="news__images-item--small">
+              <div class="news__images-wrapper news__images-small-wrapper">
+                <img class="news__image news__image-small" src="img/mobile/news-image-small1.webp" alt="watches-decorative-picture" width="242" height="222">
+              </div>
+              <div class="news__images-wrapper news__images-small-wrapper">
+                <img class="news__image news__image-small" src="img/mobile/news-image-small2.webp" alt="watches-decorative-picture" width="242" height="222">
+              </div>
+            </li>
+            <li class="news__images-item--big">
+              <div class="news__images-wrapper news__images-big-wrapper">
+                <img class="news__image news__image-big" src="img/mobile/news-image-big.webp" alt="watches-decorative-picture" width="377" height="460">
+              </div>
+            </li>
+          </ul>
         </div>
       </section>
     </main>
@@ -234,12 +240,12 @@
           <div class="main-footer__logo">
             <a class="main-footer__logo-link" href="#">
               <div class="main-footer__logo-wrapper">
-                <img src="img/mobile/logo-dark.svg" width="19.2" height="19.2" alt="Логотип магазина Conquest">
+                <img class="main-footer__logo" src="img/mobile/logo-white.svg" width="25" height="25" alt="Логотип магазина Conquest">
               </div>
               <p>conquest</p>
             </a>
           </div>
-          <div>
+          <div class="main-footer__phone-wrapper">
             <span class="main-footer__phone">
               <a class="main-footer__phone-link" href="tel:84994504797">
                 8 (499) 450-47-97
@@ -249,26 +255,26 @@
           <a class="main-footer__news-link" href="info@conquest.watch.ru">info@conquest.watch.ru</a>
         </div>
         <ul class="main-footer__list-navigation website-navigation">
-          <li class="website-navigation__item website-navigation__item--about">
-            <h2 class="website-navigation__title">о компании</h2>
-            <a href="#">Наши магазины</a>
-            <a href="#">Вакансии</a>
-            <a href="#">Сертификаты</a>
-            <a href="#">Отзывы</a>
+          <li class="main-footer__item website-navigation__item website-navigation__item--about">
+            <h2 class="main-footer__item-title website-navigation__title">о компании</h2>
+            <a class="main-footer__item-link" href="#">Наши магазины</a>
+            <a class="main-footer__item-link" href="#">Вакансии</a>
+            <a class="main-footer__item-link" href="#">Сертификаты</a>
+            <a class="main-footer__item-link" href="#">Отзывы</a>
           </li>
-          <li class="website-navigation__item website-navigation__item--customer">
-            <h2 class="website-navigation__title">покупателям</h2>
-            <a href="#">Каталог товаров</a>
-            <a href="#">Как заказать?</a>
-            <a href="#">FAQ</a>
-            <a href="#">Корпоративным клиентам</a>
+          <li class="main-footer__item website-navigation__item website-navigation__item--customer">
+            <h2 class="main-footer__item-title website-navigation__title">покупателям</h2>
+            <a class="main-footer__item-link" href="#">Каталог товаров</a>
+            <a class="main-footer__item-link" href="#">Как заказать?</a>
+            <a class="main-footer__item-link" href="#">FAQ</a>
+            <a class="main-footer__item-link" href="#">Корпоративным клиентам</a>
           </li>
-          <li class="website-navigation__item website-navigation__item--payment">
-            <h2 class="website-navigation__title">оплата и доставка</h2>
-            <a href="#">Способы оплаты</a>
-            <a href="#">Время доставки</a>
-            <a href="#">Гарантии и ремонт</a>
-            <a href="#">Возврат и компенсация</a>
+          <li class="main-footer__item website-navigation__item website-navigation__item--payment">
+            <h2 class="main-footer__item-title website-navigation__title">оплата и доставка</h2>
+            <a class="main-footer__item-link" href="#">Способы оплаты</a>
+            <a class="main-footer__item-link" href="#">Время доставки</a>
+            <a class="main-footer__item-link" href="#">Гарантии и ремонт</a>
+            <a class="main-footer__item-link" href="#">Возврат и компенсация</a>
           </li>
         </ul>
       </div>
